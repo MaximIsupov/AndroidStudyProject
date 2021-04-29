@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application4</string>
+
+    <string-array name="marks">
+        <item>"5 (Отлично)"</item>
+        <item>"4 (Хорошо)"</item>
+        <item>"3 (Удовлетворительно)"</item>
+        <item>"Неаттестован"</item>
+    </string-array>
+</resources>
