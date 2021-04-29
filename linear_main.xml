@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_window"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4E0101"
+        android:gravity="center_horizontal"
+        android:text="MyApp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="72sp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Логин"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Пароль"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="#4C0505"
+            android:onClick="registerOnClick"
+            android:text="Первый раз?"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#5C0A0A" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="#430202"
+            android:onClick="onClick"
+            android:text="Зайти"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#591010" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#4E0909"
+            android:onClick="deleteOnClick"
+            android:text="Удалить сохранённые данные"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#470B0B" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#4E0909"
+            android:onClick="changePreferences"
+            android:text="Указать настройки"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#470B0B" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="editStudent"
+        android:text="Студент"
+        app:backgroundTint="#4C0707" />
+
+    <TextView
+        android:id="@+id/calcResult"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Здесь будет отображаться ваша информация:"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/lvSpisok"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
